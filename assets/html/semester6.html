@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookiPedia</title>
+        <link rel="stylesheet" href="../css/book.css">
+        <script src="../js/book.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="name"><h1>BookiPedia</h1></div>
+        
+        <br>
+        <nav>
+            <ul>
+                <li><a href="../../index.html" onclick="showSection('home')">Home</a></li>
+                <li><a href="../html/semester1.html" onclick="showSection('semester1')">Semester 1</a></li>
+                <li><a href="../html/semester2.html" onclick="showSection('semester2')">Semester 2</a></li>
+                <li><a href="../html/semester3.html" onclick="showSection('semester3')">Semester 3</a></li>
+                <li><a href="../html/semester4.html" onclick="showSection('semester4')">Semester 4</a></li>
+                <li><a href="../html/semester5.html" onclick="showSection('semester5')">Semester 5</a></li>
+                <li><a href="../html/semester6.html" onclick="showSection('semester6')">Semester 6</a></li>
+                <!-- <li><a href="../html/semester7.html" onclick="showSection('semester7')">Semester 7</a></li>
+                <li><a href="../html/semester8.html" onclick="showSection('semester8')">Semester 8</a></li> -->
+                <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+                <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <!-- section-1 -->
+
+        <section id="home" class="content-section">
+            <h2>Welcome to Bsc.IT Reference Books</h2>
+            <center><b><p>Find the best reference books for all your Bsc.IT semesters.</p></b></center>
+        </section>
+  
+
+        <!-- section-6 -->
+        <section id="semester6.html" class="content-section">
+            <h2>Reference Books for Semester 6</h2>
+            <a href="https://www.mta.ca/~rrosebru/oldcourse/263114/Dsa.pdf" onclick="showSection('book14')">Book 10: Software Engineering</a>
+                <a href="https://mrcet.com/downloads/digital_notes/IT/(R18A0517)%20Web%20Technologies.pdf" onclick="showSection('book15')">Book 11: Web Technologies</a>
+            
+        </section>
+
+
+        <!-- section-6 -->
+        <section id="contact" class="content-section">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+
+        <!-- section-7 -->
+        <section id="about" class="content-section">
+            <h2>About Bsc.IT Reference Books</h2>
+            <p>We provide a comprehensive list of reference books for all Bsc.ITsemesters. Our goal is to help students find the best resources to excel in their studies.</p>
+        </section>
+
+
+        <!-- Repeat book sections agar chahiye -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Bsc.IT Reference Books. All rights reserved to Pallavi.</p>
+    </footer>
+</body>
+</html>

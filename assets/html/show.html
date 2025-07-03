@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="getCode();">
+    <div id="section_pdf"></div>
+</body>
+<script>
+    function getCode(){
+        debugger;
+        const currentUrl = window.location.href;
+        if(currentUrl.split("?")[1].split("=")[0]==="book"){
+             var sectionId = currentUrl.split("?")[1].split("=")[1];
+        }
+       
+
+
+        fetch('../json/books.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+            console.log(data[sectionId]);
+            document.getElementById("section_pdf").innerHTML = "<embed src='"+data[sectionId]+"' type='application/pdf' width='600' height='400'>";
+        })
+        .catch(error => {
+          console.error('There has been a problem with your fetch operation:', error);
+        });
+    }
+
+
+
+    
+
+   
+</script>
+</html>

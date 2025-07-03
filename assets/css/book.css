@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+    text-shadow: 0 2px 5px rgba(255, 221, 87, 0.8);
+}
+
+/* Hero Section */
+.name h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.name h1:hover {
+    color: #ff6f61;
+    text-shadow: 3px 3px 10px rgba(255, 111, 97, 0.8);
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+}
+
+.content-section h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #6a11cb;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+}
+
+.content-section a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #6a11cb;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.content-section a:hover {
+    color: #2575fc;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+#contact {
+    background: #f9f9f9;
+    border-radius: 15px;
+    max-width: 800px;
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+#contact input[type="submit"] {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .content-section h2 {
+        font-size: 2rem;
+    }
+
+    .content-section p {
+        font-size: 1rem;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+}

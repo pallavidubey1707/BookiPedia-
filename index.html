@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookiPedia</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/book.css">
+        <script src="../js/book.js" defer></script>
+    </head>
+<body>
+    
+    <header>
+        <div class="name"><h1>BookiPedia</h1></div><br>
+        <nav>
+            <ul>
+                    <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                    <li><a href="./assets/html/semester1.html" onclick="showSection('semester1')">Semester 1</a></li>
+                    <li><a href="./assets/html/semester2.html" onclick="showSection('semester2')">Semester 2</a></li>
+                    <li><a href="./assets/html/semester3.html" onclick="showSection('semester3')">Semester 3</a></li>
+                    <li><a href="./assets/html/semester4.html" onclick="showSection('semester4')">Semester 4</a></li>
+                    <li><a href="./assets/html/semester5.html" onclick="showSection('semester5')">Semester 5</a></li>
+                    <li><a href="./assets/html/semester6.html" onclick="showSection('semester6')">Semester 6</a></li>
+                    <!-- <li><a href="./assets/html/semester7.html" onclick="showSection('semester7')">Semester 7</a></li>
+                    <li><a href="./assets/html/semester8.html" onclick="showSection('semester8')">Semester 8</a></li> -->
+                    <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+                    <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                </ul>
+        </nav>
+    </header>
+
+
+    <!-- <div class="form_page">
+        <div class="navigation">
+            <button class="hamburger" onclick="show_form()"></button>
+            <div class="nav">
+              <i class="fa-solid fa-xmark x_icon" onclick="show_form()"></i>
+              <br>
+              <br>
+              <hr>
+              <div class="mob_navbar">
+                <ul>
+                    <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                    <li><a href="./assets/html/semester1.html" onclick="showSection('semester1')">Semester 1</a></li>
+                    <li><a href="./assets/html/semester2.html" onclick="showSection('semester2')">Semester 2</a></li>
+                    <li><a href="./assets/html/semester3.html" onclick="showSection('semester3')">Semester 3</a></li>
+                    <li><a href="./assets/html/semester4.html" onclick="showSection('semester4')">Semester 4</a></li>
+                    <li><a href="./assets/html/semester5.html" onclick="showSection('semester5')">Semester 5</a></li>
+                    <li><a href="./assets/html/semester6.html" onclick="showSection('semester6')">Semester 6</a></li>
+                    <li><a href="./assets/html/semester7.html" onclick="showSection('semester7')">Semester 7</a></li>
+                    <li><a href="./assets/html/semester8.html" onclick="showSection('semester8')">Semester 8</a></li>
+                    <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+                    <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                </ul>
+                <div class="social_media_icon">
+                    <a class="icon" href="#fb" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="icon" href="https://www.linkedin.com/company/arambh-softech/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="icon" href="#fb" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon" target="_blank" href="https://www.instagram.com/arambhsoftech?igsh=MWRqaDdycXRpdW93NQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icon" href="#fb" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+    
+        </div>
+    </div> -->
+
+    <div>
+        <!-- section-1 -->
+
+        <section id="home" class="content-section">
+            <h2>Welcome to Bsc.IT Reference Books</h2>
+            <center><b><p>Find the best reference books for all your Bsc.IT semesters.</p></b></center>
+                </section>
+  
+
+        <!-- section-1,2
+        <section id="semester1.html" class="content-section">
+            <h2>Reference Books for Semester 1</h2>
+        
+                <a href="#book1" onclick="showSection('book1')">Book 1: Introduction to Programming</a>
+                <a href="#book2" onclick="showSection('book2')">Book 2: Engineering Mathematics I</a>
+                <a href="#book3" onclick="showSection('book3')">Book 3: Basic Electronics</a>
+           
+        </section>
+
+
+        section-2
+
+        <section id="semester2.html" class="content-section">
+            <h2>Reference Books for Semester 2</h2>
+            <a href="#book4" onclick="showSection('book1')">Book 4: Data Structures</a>
+            <a href="#book5" onclick="showSection('book2')">Book 5: Mathematics-2</a>
+            
+        </section>
+
+
+        section-3
+
+        <section id="semester3.html" class="content-section">
+            <h2>Reference Books for Semester 3</h2>
+            
+                <a href="#book6" onclick="showSection('book1')">Book 6: Database Management Systems</a>
+                <a href="#book7" onclick="showSection('book2')">Book 7: Machanics</a>
+                <a href="#book6" onclick="showSection('book3')">Book 6: OOPS</a>
+        </section>
+    
+
+        section-4
+
+        <section id="semester4.html" class="content-section">
+            <h2>Reference Books for Semester 4</h2>
+            <a href="#book8" onclick="showSection('book1')">Book 8:COA </a>
+               <a href="#book9" onclick="showSection('book2')">Book 9: Mathematics-4</a>
+                <a href="#book10" onclick="showSection('book3')">Book 7: Operating Systems</a>
+                <a href="#book11" onclick="showSection('book4')">Book 7:Web Technology</a>
+                <a href="#book12" onclick="showSection('book5')">Book 7: Startup</a>
+        </section>
+
+
+        section-5
+        <section id="semester5.html" class="content-section">
+            <h2>Reference Books for Semester 5</h2>
+            <a href="#book10" onclick="showSection('book1')">Book 10: Software Engineering</a>
+                <a href="#book11" onclick="showSection('book2')">Book 11: Web Technologies</a>
+            
+        </section>
+
+        section-6
+        <section id="semester6.html" class="content-section">
+            <h2>Reference Books for Semester 6</h2>
+            <a href="#book10" onclick="showSection('book1')">Book 10: Software Engineering</a>
+                <a href="#book11" onclick="showSection('book3')">Book 11: Web Technologies</a>
+            
+        </section>
+
+
+        section-7
+        <section id="semester7.html" class="content-section">
+            <h2>Reference Books for Semester 7</h2>
+            <a href="#book10" onclick="showSection('book1')">Book 10: Software Engineering</a>
+                <a href="#book11" onclick="showSection('book2')">Book 11: Web Technologies</a>
+            
+        </section>
+
+        <x section-8 -->
+        <!-- <section id="semester8.html" class="content-section">
+            <h2>Reference Books for Semester 8</h2>
+            <a href="#book10" onclick="showSection('book1')">Book 10: Software Engineering</a>
+                <a href="#book11" onclick="showSection('book2')">Book 11: Web Technologies</a>
+            
+        </section> --> 
+
+        <!-- section-9 -->
+        <section id="contact" class="content-section">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <div><input type="submit" value="Submit"></div>
+            </form>
+        </section>
+
+
+        <!-- section-10 -->
+        <section id="about" class="content-section">
+            <h2>About Bsc.IT Reference Books</h2>
+            <p>We provide a comprehensive list of reference books for all Bsc.IT semesters. Our goal is to help students find the best resources to excel in their studies.</p>
+        </section>
+
+
+        <!-- Repeat book sections agar chahiye -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Bsc.IT Reference Books. All rights reserved to Pallavi.</p>
+    </footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookiPedia</title>
+        <link rel="stylesheet" href="../css/book.css">
+        <script src="../js/book.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="name"><h1>BookiPedia</h1></div>
+        
+        <br>
+        <nav>
+            <ul>
+              
+                <li><a href="../../index.html" onclick="showSection('home')">Home</a></li>
+                    <li><a href="../html/semester1.html" onclick="showSection('semester1')">Semester 1</a></li>
+                    <li><a href="../html/semester2.html" onclick="showSection('semester2')">Semester 2</a></li>
+                    <li><a href="../html/semester3.html" onclick="showSection('semester3')">Semester 3</a></li>
+                    <li><a href="../html/semester4.html" onclick="showSection('semester4')">Semester 4</a></li>
+                    <li><a href="../html/semester5.html" onclick="showSection('semester5')">Semester 5</a></li>
+                    <li><a href="../html/semester6.html" onclick="showSection('semester6')">Semester 6</a></li>
+                    <!-- <li><a href="../html/semester7.html" onclick="showSection('semester7')">Semester 7</a></li>
+                    <li><a href="../html/semester8.html" onclick="showSection('semester8')">Semester 8</a></li> -->
+                    <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+                    <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <div>
+        <!-- section-1 -->
+
+        <section id="home" class="content-section">
+            <h2>Welcome to Bsc.IT Reference Books</h2>
+            <center><b><p>Find the best reference books for all your Bsc.IT semesters.</p></b></center>
+        </section>
+  
+<!-- section-4 -->
+
+<section id="semester4" class="content-section">
+  <h2>Reference Books for Semester 4</h2>
+
+  <!-- ✅ Computer Organization & Architecture (Stallings) -->
+  <a href="https://os.ecci.ucr.ac.cr/ci0114/material/Stallings/Computer-Organization-Architecture-11th.pdf"
+     target="_blank">
+    📘 Book 8: Computer Organization & Architecture
+  </a><br>
+
+  <!-- ✅ Operating Systems (Three Easy Pieces by Arpaci-Dusseau) -->
+  <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/Operating-Systems-3rd-Edition.pdf"
+     target="_blank">
+    📗 Book 9: Operating Systems (Three Easy Pieces)
+  </a><br>
+
+  <!-- ✅ Web Technologies (LPU) -->
+  <a href="https://mrcet.com/downloads/digital_notes/IT/(R18A0517)%20Web%20Technologies.pdf"
+     target="_blank">
+    📙 Book 10: Web Technologies
+  </a><br>
+
+  <!-- ✅ Engineering Mathematics IV (Anna University – Linear Algebra & Probability) -->
+  <a href="https://www.drbcccmet.edu.in/wp-content/uploads/2021/07/Engineering-Mathematics-IV.pdf"
+     target="_blank">
+    📕 Book 11: Mathematics IV
+  </a>
+</section>
+
+
+
+
+
+        <!-- section-6 -->
+        <section id="contact" class="content-section">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+
+        <!-- section-7 -->
+        <section id="about" class="content-section">
+            <h2>About Bsc.IT Reference Books</h2>
+            <p>We provide a comprehensive list of reference books for all Bsc.IT semesters. Our goal is to help students find the best resources to excel in their studies.</p>
+        </section>
+
+
+        <!-- Repeat book sections agar chahiye -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Bsc.IT Reference Books. All rights reserved to Pallavi.</p>
+    </footer>
+</body>
+</html>
